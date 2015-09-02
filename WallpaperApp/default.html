@@ -22,7 +22,7 @@
     <div class="title">
         <img src="title.png" alt="Every Planet Procedural">
     </div>
-    
+
     <div class="content">
         <canvas id="myCanvas" class="pixelated" width="640" height="360"></canvas>
 
@@ -31,8 +31,17 @@
         </div>
     </div>
 
+    <!-- TODO: replace buttons with a proper WinJS toolbar (with icons and all). Not sure where to put the resolution settings though... -->
     <div class="controls">
         <button id="discovernew" class="win-button">discover new planet</button>
+
+        <select id="selResolution" class="win-dropdown">
+            <option value="320x180">320x180 (fastest)</option>
+            <option value="640x360" selected>640x360 (recommended)</option>
+            <option value="1280x720">1280x720 (slowest)</option>
+        </select>
+
+        <button id="saveImage" class="win-button">save image</button>
 
         <button id="setWallpaper" class="win-button">set as wallpaper</button>
     </div>
